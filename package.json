@@ -1,0 +1,22 @@
+{
+  "name": "sitechat",
+  "version": "1.0.0",
+  "description": "Server side code for SiteChat",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShauralP/SiteChatNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShauralP/SiteChatNode/issues"
+  },
+  "homepage": "https://github.com/ShauralP/SiteChatNode#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0"
+  }
+}
