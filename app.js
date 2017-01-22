@@ -37,9 +37,15 @@ app.post('/storedata', function (req, res) {
 	res.send(readFile());
 })
 
-app.listen(3000, function () {
-	console.log('Example app listening on port 3000!')
-})
+// app.listen(3000, function () {
+// 	console.log('Example app listening on port 3000!')
+// })
+
+var server_port = process.env.3000 || process.env.PORT || 80;
+var server_host = '0.0.0.0'; //process.env.YOUR_HOST ||
+server.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
+});
 
 //ping app that data has changed
 app.get('/getdata', function (req, res) {
