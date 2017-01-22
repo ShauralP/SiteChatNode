@@ -1,0 +1,8 @@
+{
+  "name": "SiteChat",
+  "description": "Chrome extension that enables you to chat with everyone on the same website.",
+  "repository": "https://github.com/ShauralP/SiteChatNode",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
