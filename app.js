@@ -9,10 +9,10 @@ function readFile() {
 	return text;
 }
 
-//Write String to database file
+//Write Stvring to database file
 function writeFile(a) {
 	fs.appendFile("text.txt", a);
-	fs.appendFile("text.txt", os.EOL);
+	//fs.appendFile("text.txt", os.EOL);
 }
 
 
@@ -24,7 +24,7 @@ app.use( bodyParser.json() );
 
 app.post('/storedata', function (req, res) {
 	// var full = req.body.ip + "-" + req.body.id + "-" + req.body.time + "-" + req.body.message;
-	var full = req.body.id + "-" + req.body.name + "-" + req.body.message;
+	var full = "|" + req.body.id + "~" + req.body.name + "~" + req.body.message + "~|";
 	// var full = req.params;
 	console.log(req.body);
 	// console.log(full);
