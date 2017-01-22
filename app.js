@@ -11,8 +11,13 @@ function readFile() {
 
 //Write Stvring to database file
 function writeFile(a) {
-	fs.appendFile("text.txt", a);
-	//fs.appendFile("text.txt", os.EOL);
+	var filecont = readFile();
+	if(filecont.indexOf(a) > -1) {
+		//do nothing
+	} else {
+		fs.appendFile("text.txt", a);
+		//fs.appendFile("text.txt", os.EOL);
+	}
 }
 
 
