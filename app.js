@@ -29,7 +29,7 @@ app.use( bodyParser.json() );
 
 app.post('/storedata', function (req, res) {
 	// var full = req.body.ip + "-" + req.body.id + "-" + req.body.time + "-" + req.body.message;
-	var full = "|" + req.body.id + "~" + req.body.name + "~" + req.body.message + "~|";
+	var full = "|~" + req.body.ip + "~" + req.body.time + "~" + req.body.name + "~" + req.body.message + "~|";
 	// var full = req.params;
 	console.log(req.body);
 	// console.log(full);
